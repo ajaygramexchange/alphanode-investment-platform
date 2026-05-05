@@ -18,6 +18,8 @@ export default function LandingPage() {
         </div>
       </header>
 
+
+
       {/* Hero */}
       <section className="pt-32 pb-24 px-6 text-center max-w-5xl mx-auto">
         <div className="inline-flex items-center gap-2 px-5 py-2 bg-zinc-900 rounded-full mb-8 border border-zinc-700">
