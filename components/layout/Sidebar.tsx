@@ -16,6 +16,8 @@ const navItems = [
   { href: "/dashboard/withdraw", label: "Withdraw", icon: ArrowUpFromLine },
   { href: "/dashboard/transactions", label: "Transactions", icon: History },
   { href: "/dashboard/profile", label: "Profile", icon: User },
+  // Optional: Add admin
+  // { href: "/dashboard/admin", label: "Admin", icon: Shield },
 ];
 
 export function AppSidebar() {
