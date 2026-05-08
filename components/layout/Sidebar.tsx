@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { 
   Home, TrendingUp, ArrowDownToLine, ArrowUpFromLine, 
-  History, User, LogOut, Wallet 
+  History, User, LogOut, Wallet, Shield 
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -16,8 +16,7 @@ const navItems = [
   { href: "/dashboard/withdraw", label: "Withdraw", icon: ArrowUpFromLine },
   { href: "/dashboard/transactions", label: "Transactions", icon: History },
   { href: "/dashboard/profile", label: "Profile", icon: User },
-  // Optional: Add admin
-  // { href: "/dashboard/admin", label: "Admin", icon: Shield },
+  { href: "/dashboard/admin", label: "Admin", icon: Shield },   // ← Now properly imported
 ];
 
 export function AppSidebar() {
@@ -64,7 +63,6 @@ export function AppSidebar() {
         })}
       </nav>
 
-      {/* Logout */}
       <div className="p-4 border-t border-zinc-800">
         <button className="flex items-center gap-3 px-4 py-3 w-full text-red-400 hover:bg-red-950/50 rounded-2xl text-sm font-medium transition-all">
           <LogOut className="w-5 h-5" />
